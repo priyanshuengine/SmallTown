@@ -10,6 +10,9 @@
 </head>
 
 <body>
+   
+   
+   
     <nav id="home">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -22,16 +25,21 @@
             <li><a href="careers.html">Careers</a></li>
             <li><a class="active" href="contact.html">Contact Us</a></li>
         </ul>
+       
     </nav>
+
     <hr>
+    
+
+    <div class="bgbro" id="bgbro">
     <div class="heading" style="text-align: center;">
-        <h1 style="text-align: center; color: white;
+        <h1 style="text-align: center; color: #28CBFF;
     font-size: 4rem;
     font-weight: bolder;
     font-family: sans-serif;
     -webkit-text-stroke: 2px #000000;
-    text-shadow: 5px 4px 0px rgb(0, 255, 255);">Reach Out To Us</h1>
-        <p>Our team will reach out to you Soon</p>
+    text-shadow: 7px 4px 0px white;">Reach Out To Us</h1>
+       
     </div>
     <br><br><br><br>
     <div class="show" id="show">
@@ -39,6 +47,7 @@
         <p>Now sit back and wait for our team to get back to you</p>
     </div>
     <br>
+   
     <div class="form" id="form">
         <form action="">
             <div class="form1">
@@ -58,8 +67,9 @@
     font-weight: bolder;
     font-family: sans-serif;
     -webkit-text-stroke: 2px #000000;
-    text-shadow: 5px 4px 0px rgb(0, 0, 0);">Contact</h2> <br> <br>
-    <p style="text-align: center;">Contact our HR mail@email.com if any further queries</p>
+    text-shadow: 5px 4px 0px white">Contact</h2> <br> <br>
+    <!--<p>+91 12345 67891</p>-->
+    <p style="text-align: center;">2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
     <br><br><br><hr>
     <footer>
         <div class="hme">
@@ -78,6 +88,7 @@
             abcd1212@gmail.com &nbsp;&nbsp; +91 99999 88888 <br>
             Lorem ipsum, dolor sit amet consectetur adipisicing.
         </h4><br> <br>
+    </div>
         <h3>Follow Us</h3>
         <div class="follow">
             <a href="" class="socialContainer containerOne">
@@ -118,6 +129,7 @@
     </footer>
     <script>
         function showfunction() {
+            document.getElementById('bgbro').style.display = "none";
             document.getElementById('form').style.display = "none";
             document.getElementById('show').style.display = "block";
         }
