@@ -3048,7 +3048,17 @@ textarea::placeholder {
       display: none; /* Hide the desktop logo for mobile view */
   }
   .mobile-logo {
-      display: inline-block;
-      padding: 10px; /* Display the mobile logo for mobile view */
+      display:flex;
+      padding: 10px; 
+      align-items: center;/* Display the mobile logo for mobile view */
   }
+  @media only screen and (max-width: 768px) {
+    .mobile-image {
+        display: block; /* Ensure the mobile image is displayed */
+        max-width: 100%; /* Adjust width as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 10px; /* Adjust margin as needed */
+        margin-left: 50px;
+    }
+}
 }
