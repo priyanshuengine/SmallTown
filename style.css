@@ -2922,3 +2922,20 @@ textarea::placeholder {
     }
 }
 }
+#text {
+  font-size: 12px;
+}
+
+/* Styles for desktop */
+@media screen and (min-width: 768px) {
+  #text {
+    display: block; /* Ensure line breaks are respected */
+  }
+}
+
+/* Styles for mobile */
+@media screen and (max-width: 767px) {
+  #text br {
+    display: none; /* Hide line breaks */
+  }
+}
