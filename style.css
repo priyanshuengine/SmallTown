@@ -387,7 +387,7 @@ nav ul li a {
 
 a.active,
 a:hover {
-  background: #1b9bff;
+  background: #28CBFF;
   transition: .5s;
   padding:20px 30px;
 }
@@ -447,12 +447,7 @@ a:hover {
     z-index: 1;
   }
 
-  a.active,
-  a:hover {
-      background: #1b9bff;
-      transition: .5s;
-      padding: 20px 30px;
-  }
+
 
   #check:checked~ul {
     left: 0;
@@ -1912,11 +1907,12 @@ a:hover {
     z-index: 1;
   }
 
-  a:hover,
-  a.active {
-    background: none;
-    color: #0082e6;
-  }
+  a.active,
+a:hover {
+  background: #1b9bff;
+  transition: .5s;
+  padding:20px 30px;
+}
 
   #check:checked~ul {
     left: 0;
@@ -1935,8 +1931,8 @@ a:hover {
   box-shadow: 4px 4px 0px 0px #05ffea;
   cursor: pointer;
   border: 2px solid #000000;
-  border-radius: 5px;
-  padding: 0.5rem;
+  border-radius: 1px;
+  padding: 0.9rem;
 }
 
 .cta:hover {
