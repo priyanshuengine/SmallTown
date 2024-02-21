@@ -332,6 +332,7 @@ body {
   width: 100%;
   height: 100%;
   background: linear-gradient(to bottom, rgba(0, 174, 255, 0.219), rgba(3, 108, 156, 0)) transparent;
+  overflow: hidden;
 }
 
 
@@ -2924,12 +2925,14 @@ textarea::placeholder {
 }
 #text {
   font-size: 12px;
+  overflow-wrap: break-word; 
 }
 
 /* Styles for desktop */
 @media screen and (min-width: 768px) {
   #text {
-    display: block; /* Ensure line breaks are respected */
+    display: block;
+    word-wrap: break-word; /* Ensure line breaks are respected */
   }
 }
 
