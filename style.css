@@ -48,7 +48,7 @@
 	  padding-left: 5%;
 	  padding-right: 5%;
 	  padding-bottom: 5%;
-	  overflow: hidden;
+	 
 	}
   
 	.main .gridlines {
@@ -2667,7 +2667,7 @@
     width: 44%;
     margin-top: 10px;
   }
-  .emails{
+  .emailed{
     width: 55%;
     margin-bottom: 5px;
 
@@ -2689,6 +2689,7 @@
     color: white;
     box-shadow: 12px 13px 0px 0px #F3F3F3,14px 16px 0px 0px #080910;
     width: 100%;
+	margin-left: 15px;
   }
   
   @media only screen and (max-width: 768px) {
@@ -2700,6 +2701,7 @@
     .email {
       width: 55%;
       margin-top: 5px;
+	  margin-left: 20px!important;
     }
     .phone {
       width: 44%;
@@ -2707,7 +2709,7 @@
       margin-bottom: 30px;
     }
     .message{
-      width: 95%;
+      width: 90%;
       height: 90px;
       margin-top: -10px;
     }
@@ -2717,28 +2719,42 @@
       margin-left: 8px;
   
     }
-    .emails{
-      width: 95%;
-      margin-bottom: 5px;
-      margin-left: 8px;
-      margin-top: 1px;
-  
-    }
+	.emailed{
+		width:90%;
+		margin-left:20px!important;
+		margin-bottom: 2px;
+
+	}
+    
     .move{
     
-      width: 95%;
+      width: 90%;
       margin-bottom: 5px;
-      margin-left: 8px;
+      margin-left: 20px;
   
     }
     .messages{
-      width: 95%;
+      width: 90%;
       height: 100px;
       margin-bottom: 5px;
-      margin-left: 8px;
+      margin-left: 20px;
       margin-top: -20px;
   
     }
+	.submitbutton {
+		background-color: #080910;
+		color: white;
+		box-shadow: 12px 13px 0px 0px #F3F3F3,14px 16px 0px 0px #080910;
+		width: 90%;
+	  }
+	.submitbtn{
+		background-color: #E3F8FF;
+		color: black;
+		box-shadow: 10px 10px 0px 0px #28CBFF;
+		width: 90%;
+		margin-left: 20px;
+
+	}
 
     }
   
@@ -2760,10 +2776,19 @@
   /* Media query for screens smaller than 768px */
   @media screen and (max-width: 768px) {
     input[type="text"],
-    input[type="email"],
+	input[type="email"],
+   
     textarea {
-        width: 95%;
+        width: 90%;
         margin-left: 10px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    input[type="text"],
+    input[type="emails"],
+    textarea {
+        width: 90%;
+        margin-left: 20px;
     }
   }
   
