@@ -398,7 +398,8 @@
 	color: white;
 	float: right;
 	line-height: 80px;
-	margin-right: 40px;
+	margin-right: 20px;
+	margin-top: 20px;
 	cursor: pointer;
 	display: none;
   }
@@ -464,7 +465,7 @@
   .cta {
 	background: white;
 	font-size: 1.5rem;
-	box-shadow: 5px 5px 0px 0px #28CBFF;
+	box-shadow: 5px 5px 0px 0px #28CBFF!important;
 	cursor: pointer;
 	border: 2px solid #000000;
 	border-radius: 1px;
@@ -1104,7 +1105,23 @@
 	box-shadow: 0.4rem 0.4rem white,0.6rem 0.6rem #000000;
 	overflow: hidden;
 	color: black;
+	
   }
+  @media (max-width: 767px) {
+    .card-if {
+        animation: scrollRightToLeft 5s linear infinite; /* Adjust duration as needed */
+        white-space: nowrap; /* Ensure the content doesn't wrap */
+    }
+}
+
+    @keyframes scrollRightToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
   .cards-if {
 	position: relative;
 	width: 110px;
@@ -1713,15 +1730,7 @@
 	padding:20px 30px;
   }
   
-  .checkbtn {
-	font-size: 30px;
-	color: white;
-	float: right;
-	line-height: 80px;
-	margin-right: 40px;
-	cursor: pointer;
-	display: none;
-  }
+ 
   
   #check {
 	display: none;
@@ -2260,7 +2269,7 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-ar;
 	padding-left: 14%;
 	padding-right: 14%;
 	padding-top: 5%;
@@ -2617,15 +2626,29 @@
   
   .nice {
 	/* background: aqua; */
-	background: #28CBFF;
+	background: black;
 	font-family: inherit;
-	padding: 0.6em 1.3em;
+	padding: 0.9em 2.4em;
 	font-weight: 900;
 	font-size: 18px;
-	border: 3px solid black;
-	border-radius: 0.4em;
-	box-shadow: 0.1em 0.1em white;
+	border: 3px solid white;
+	border-radius: 0.1em;
+	box-shadow: 0.2em 0.2em white;
 	cursor: pointer;
+	color: #28CBFF;
+  }
+  .nices {
+	/* background: aqua; */
+	background: #C9F2FF;
+	font-family: inherit;
+	padding: 0.9em 2.4em;
+	font-weight: 900;
+	font-size: 18px;
+	border: 1px solid #080910;
+	border-radius: 0.1em;
+	box-shadow: 0.4em 0.3em #28CBFF;
+	cursor: pointer;
+	color: #080910;
   }
   
   .nice:hover {
@@ -2841,7 +2864,7 @@
   .usecard {
 	background-color: #fff;
 	border-radius: 8px;
-	box-shadow: 8px 8px 0 aqua, 0 2px 4px rgba(0, 0, 0, 0.1);
+	box-shadow: 8px 8px 0 #28CBFF, 0 2px 4px rgba(0, 0, 0, 0.1);
 	margin: 0.5rem;
 	padding: 20px;
 	min-width: 30%;
@@ -2945,7 +2968,7 @@
 		vertical-align: middle;
 		position: absolute;
 		top: 20px; /* Adjust top position as needed */
-		left: 20px;
+		left: -5px;
 	}
   }
   
