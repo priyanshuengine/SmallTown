@@ -337,20 +337,7 @@
   
   
   
-  .gridlines {
-	border-radius: 50%;
-	width: 400px;
-	height: 350px;
-	margin-left: 5rem;
-	margin-top: 4rem;
-	color: wheat;
-	position: absolute;
-	z-index: -1;
-	background-size: 60px 60px;
-	background-image:
-	  linear-gradient(rgba(100, 148, 237, 0.24) 1px, transparent 1px),
-	  linear-gradient(90deg, rgba(100, 148, 237, 0.432) 1px, transparent 1px);
-  }
+ 
   
   
   nav {
@@ -625,6 +612,14 @@
   }
   
   .card-if img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+  }
+  .cardan-if img {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1122,6 +1117,19 @@
         transform: translateX(-100%);
     }
 }
+.cardan-if {
+	position: relative;
+	width: 110px;
+	height: 100px;
+	background: #28CBFF;
+	/* padding: 1rem; */
+	border-radius: 1rem;
+	border: 0.5vmin solid #05060f;
+	box-shadow: 0.4rem 0.4rem white,0.6rem 0.6rem #000000;
+	overflow: hidden;
+	color: black;
+	
+  }
   .cards-if {
 	position: relative;
 	width: 110px;
@@ -1675,19 +1683,20 @@
   
   
   .gridlines {
-	border-radius: 50%;
-	width: 400px;
-	height: 350px;
-	margin-left: 5rem;
-	margin-top: 4rem;
-	color: wheat;
-	position: absolute;
-	z-index: -1;
-	background-size: 60px 60px;
-	background-image:
-	  linear-gradient(rgba(100, 148, 237, 0.24) 1px, transparent 1px),
-	  linear-gradient(90deg, rgba(100, 148, 237, 0.432) 1px, transparent 1px);
-  }
+    border-radius: 50%;
+    width: 400px;
+    height: 350px;
+    margin-left: 5rem;
+    margin-top: 4rem;
+    color: wheat;
+    position: absolute;
+    z-index: -1;
+    background-size: 60px 60px;
+    background-image:
+        linear-gradient(rgba(100, 148, 237, 0.1) 1px, transparent 1px), /* Adjust opacity here */
+        linear-gradient(90deg, rgba(100, 148, 237, 0.2) 1px, transparent 1px); /* Adjust opacity here */
+}
+
   
   
   nav {
