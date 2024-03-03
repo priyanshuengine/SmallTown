@@ -1229,7 +1229,6 @@
 	height: 100%;
 	object-fit: cover;
 	opacity: 0.2;
-	filter: grayscale(100%);
   }
   
   .img-text {
@@ -1280,6 +1279,22 @@
 	padding-top: 5%;
 	padding-bottom: 5%;
   
+  }
+  .mem1 .gridlines {
+	width: 10%;
+	height: 14%;
+	margin-left: 0rem;
+	margin-top: 180px;
+	color: white;
+	position: absolute;
+	z-index: -1;
+	background-size: 40px 40px; /* Increase the size of the grid */
+	background-image:
+	  linear-gradient(rgba(46, 46, 46, 0.2) 1px, transparent 1px),
+	  linear-gradient(rgba(46, 46, 46, 0.2) 1px, transparent 1px),
+	  linear-gradient(90deg, rgba(66, 66, 66, 0.2) 1px, transparent 1px),
+	  linear-gradient(90deg, rgba(66, 66, 66, 0.2) 1px, transparent 1px);
+	border-radius: 0; /* Reset border-radius */
   }
   
   .mem1 img,
@@ -2276,13 +2291,23 @@
   
   .cds {
 	display: flex;
-	flex-direction: row;
+	flex-direction:row;
 	align-items: center;
-	justify-content: space-ar;
+	justify-content: space-evenly;
 	padding-left: 14%;
 	padding-right: 14%;
 	padding-top: 5%;
   }
+ 
+@media only screen and (max-width: 600px) {
+	.cds {
+        padding-left: 0; /* Reset padding for smaller screens */
+        padding-right: 100px;
+		flex-wrap: nowrap;
+		height: 100%;
+		width: 120%;
+    }
+}
   
   
   .cds1 {
@@ -2528,24 +2553,27 @@
   /* About us page */
   .team {
 	background-color: #000000;
+	
   }
   
   .img5 {
 	position: relative;
 	width: 100%;
 	height: 80vh;
-	overflow: hidden;
+	
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
   }
   
   .aboutimg {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	opacity: 0.2;
-	filter: grayscale(100%);
+	opacity: 2.9;
+	
   }
+  
   
   .img-text {
 	position: absolute;
@@ -2836,6 +2864,7 @@
   /* spyrosigma: Making changes below for contact us page */
   
   .show {
+	background-color: #000000;
 	text-align: center;
 	padding: 2%;
 	width: 220px;
@@ -2844,7 +2873,21 @@
 	align-items: center;
 	justify-content: center;
 	border: 1px solid #ffffff;
-	box-shadow: 8px 6px 0px 0px #ffffff;
+	box-shadow: 6px 4px 0px 0px #ffffff,8px 6px 0px 0px #000000;
+	display: none;
+  }
+  .shows {
+	background-color: #E3F8FF;
+	color: #000000;
+	text-align: center;
+	padding: 2%;
+	width: 220px;
+	height: 200px;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #ffffff;
+	box-shadow: 9px 9px 0px 0px #28CBFF;
 	display: none;
   }
   
@@ -3109,3 +3152,8 @@
 	}
 	
   }
+  .light {
+    font-weight: lighter !important;
+	font-size: 12px;
+  }
+  
