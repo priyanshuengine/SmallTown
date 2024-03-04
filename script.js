@@ -42,3 +42,4 @@ window.onload = function() {
     updateCountOnScroll('countup2');
     updateCountOnScroll('countup3');
 };
+
